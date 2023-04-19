@@ -1,23 +1,14 @@
+@import "./utils/variables";
 
-// Color variations
+@import "./base/reset";
+@import "./base/typography";
 
-$main-color: #9356DC;
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/cta";
 
-$secondary-color:#FF79DA;
+@import "./components/buttons";
 
-$third-color: #99E2D0;
 
-// General rules for body
 
-body {
 
-min-width: 320px;
-font-family: 'Roboto', sans-serif;
-}
-
-// Font variation for titles 
-
-.font_logo__title { 
-    font-family: 'Shrikhand', cursive;  
-
-}

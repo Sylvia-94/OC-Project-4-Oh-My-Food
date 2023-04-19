@@ -1,0 +1,21 @@
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 285px;
+    background-color: $background-color-2;
+    & h1 {
+        font-weight: 700;
+        font-size: 24px;
+        padding-bottom: 15px;
+
+    }
+    & h2 {
+        font-weight: 300;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+   
+}

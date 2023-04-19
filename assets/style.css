@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font: inherit;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", cursive;
+}
+
+.font__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+.font__title--small {
+  font-size: 18px;
+}
+
+.center--x {
+  justify-content: center;
+  text-align: center;
+}
+
+.padding__logo {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.navigation {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.navigation__location {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #D2D2D2;
+}
+.navigation__location--padding {
+  padding: 15px 0px;
+}
+.navigation__location i {
+  padding-right: 17px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 285px;
+  background-color: #EAEAEA;
+}
+.cta h1 {
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.cta h2 {
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0px 18px;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=style.css.map */
