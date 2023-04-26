@@ -1,0 +1,101 @@
+
+.loader {
+    position: absolute;
+    z-index: 99999;
+    height: 2500px;
+    width:100vw;
+    background-color: $background-color-5;
+    color: white;
+    overflow-y: hidden;
+    scroll-behavior: unset;
+    animation: vanish ease-in-out forwards;
+    animation-delay: 2.8s;
+    animation-duration: 0.8s;
+
+}
+
+@keyframes vanish {
+
+from {
+    opacity: 1;
+}
+to {
+    opacity: 0;
+}
+
+}
+.loader-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    & p {
+        position: absolute;
+    }
+    
+}
+
+.bouncy-circles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 1rem;
+
+}
+.circle {
+    position: relative;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: white;
+    animation: bouncing .5s alternate infinite ease;
+    &--purple {
+        background-color: $main-color;
+    }
+    &--pink {
+        background-color: $secondary-color;
+    }
+    &--teal {
+        background-color: $third-color;
+    }
+
+}
+
+.circle:nth-child(2) {
+
+    animation-delay: .1s;
+    
+}
+.circle:nth-child(3) {
+
+    animation-delay: .2s;
+    
+}
+.circle:nth-child(4) {
+
+    animation-delay: .3s;
+    
+}
+.circle:nth-child(5){
+
+    animation-delay: .4s;
+    
+}
+
+@keyframes bouncing {
+
+    0% {
+        // height: 5px;
+        border-radius: 25px 25px 25px 25px;
+        transform: translateY(60px);
+        height: 50px;
+
+    }
+    49% {
+        height: 20px;
+        border-radius: 50%;
+    }
+}

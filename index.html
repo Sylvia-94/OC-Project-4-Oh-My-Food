@@ -17,6 +17,18 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <div class="loader-elements">
+        <p class="font__title">Loading ohmyfood ...</p>
+        <div class="bouncy-circles">
+          <div class="circle circle--teal"></div>
+          <div class="circle circle--pink"></div>
+          <div class="circle circle--purple"></div>
+          <div class="circle circle--pink"></div>
+          <div class="circle circle--teal"></div>
+        </div>
+      </div>
+    </div>
     <header>
       <h1 class="font__title center--x padding__logo">Ohmyfood</h1>
     </header>
@@ -34,74 +46,99 @@
       </h2>
       <a href="#" class="button">Explorez nos restaurants</a>
     </section>
-    <section>
-      <h1>Fonctionnement</h1>
-      <ol>
-        <li>
+    <section class="howto">
+      <h1 class="howto__title">Fonctionnement</h1>
+      <ol class="howto__list">
+        <li class="howto__list__items">
           <i class="fa-solid fa-mobile-screen-button"></i> Choisissez un
-          restaurant>
+          restaurant
         </li>
-        <li><i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
-        <li><i class="fa-solid fa-store"></i> Dégustez au restaurant</li>
+        <li class="howto__list__items">
+          <i class="fa-solid fa-list-ul"></i> Composez votre menu
+        </li>
+        <li class="howto__list__items">
+          <i class="fa-solid fa-store"></i> Dégustez au restaurant
+        </li>
       </ol>
     </section>
-    <section>
-      <h1>Restaurants</h1>
+    <section class="restaurants">
+      <h1 class="restaurants__title">Restaurants</h1>
       <ul>
         <li>
-          <article>
+          <a href="#" class="cards">
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Jay1.jpg"
               alt=""
             />
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
-            <i class="fa-thin fa-heart"></i>
-          </article>
+            <div class="cards__body">
+              <div>
+                <h3 class="cards__body__title">La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
         </li>
         <li>
-          <article>
+          <a href="#" class="cards">
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Stil2.jpg"
               alt=""
             />
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
-            <i class="fa-thin fa-heart"></i>
-          </article>
+            <div class="cards__body">
+              <div>
+                <h3 class="cards__body__title">La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
         </li>
         <li>
-          <article>
+          <a href="#" class="cards">
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Toa3.jpg"
               alt=""
             />
-            <h3>À la française</h3>
-            <p>Cité Rouge</p>
-            <i class="fa-thin fa-heart"></i>
-          </article>
+            <div class="cards__body">
+              <div>
+                <h3 class="cards__body__title">À la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
         </li>
         <li>
-          <article>
+          <a href="#" class="cards">
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Louis4.jpg"
               alt=""
             />
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-            <i class="fa-thin fa-heart"></i>
-          </article>
+            <div class="cards__body">
+              <div>
+                <h3 class="cards__body__title">Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
         </li>
       </ul>
     </section>
 
-    <footer>
-      <h3 class="font__title font__title--small">Ohmyfood</h3>
+    <footer class="footer">
+      <h3 class="font__title font__title--small footer__title">Ohmyfood</h3>
       <ul>
-        <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+        <li class="footer__list">
+          <i class="fa-solid fa-utensils"></i>Proposer un restaurant
+        </li>
+        <li class="footer__list">
+          <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+        </li>
+        <li class="footer__list">Mentions légales</li>
+        <li class="footer__list">Contact</li>
       </ul>
     </footer>
   </body>
