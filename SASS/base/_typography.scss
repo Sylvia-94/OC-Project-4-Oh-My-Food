@@ -6,8 +6,14 @@ body {
 // Font variation for titles 
 
 .font__title { 
-    font-family: 'Shrikhand', cursive;  
-    font-size: 30px;
+    font-family: 'Shrikhand', cursive; 
+     
+    &--large {
+        font-size: 30px;
+    }
+    &--medium {
+        font-size: 25px;
+    }
     &--small {
         font-size: 18px;
     }

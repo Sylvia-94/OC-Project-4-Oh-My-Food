@@ -5,20 +5,52 @@ justify-content: space-between;
 background-color: $background-color-6;
 color: white;
 padding-left: 25px;
+@include breakpoint (tablet){
+    align-items: center;
+}
+@include breakpoint (desktop) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 60px 20px 30px 0px;
+    
+
+}
+
+
 &__title {
     padding : 22px 0px 16px 0px;
+    @include breakpoint (desktop){
+
+        padding: 0px 0px 0px 40px;
+    }
 
 }
 
 &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-bottom: 7px;
-    
-    & i {
-        padding-right: 10px;
+    @include breakpoint (desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 15px;
     }
 
+    &__items {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 7px;
+        @include breakpoint (tablet){
+
+            justify-content: center;
+        }
+
+        
+    
+        & i {
+            padding-right: 10px;
+        }
+    
+    }
 }
+
 }

@@ -1,9 +1,29 @@
 // Rules for header 
+
 .center--x {
-    justify-content: center;
     text-align: center;
+   
 }
 .padding__logo {
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    @include breakpoint (desktop) {
+
+        padding: 30px 0px;
+    }
+ 
 }
+.prev-page {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 25px 0px 0px 25px;
+    margin-bottom: 25px;
+@include breakpoint (desktop) {
+    padding-top: 33px;
+}
+}
+

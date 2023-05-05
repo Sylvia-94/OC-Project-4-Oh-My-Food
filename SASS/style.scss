@@ -1,5 +1,7 @@
 @import "./utils/variables";
 
+@import "./utils/breakpoints";
+
 @import "./base/reset";
 @import "./base/typography";
 
@@ -13,6 +15,9 @@
 @import "./components/buttons";
 @import "./components/cards";
 @import "./components/likebutton";
+
+@import "./pages/restaurant_images";
+@import "./pages/menu";
 
 
 

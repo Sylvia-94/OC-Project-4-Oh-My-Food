@@ -1,0 +1,13 @@
+.restaurant--img {
+height: 275px;
+width: 100%;
+object-fit:cover;
+@include breakpoint (desktop) {
+    height: 342px;
+}
+@include breakpoint (tablet) {
+    height: 342px;
+}
+
+
+}

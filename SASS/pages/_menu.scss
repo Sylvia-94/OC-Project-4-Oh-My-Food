@@ -1,0 +1,218 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+    
+   
+.menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+        background-color: $background-color-4;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: -35px;
+        width: 100%;
+        
+        @include breakpoint (desktop){
+
+            width: 75%;
+            
+        }
+        @include breakpoint (tablet){
+
+            width: 85%;
+            
+        }
+       
+            
+       
+    
+    
+    &__name {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: nowrap;
+        padding: 30px 15px 20px 15px;
+        
+
+    }
+    &__heart-button {
+        font-size: 28px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 13px 0px 13px;
+        @include breakpoint (desktop){
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+        @include breakpoint (tablet){
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        }
+
+      
+    }
+
+    .courses {
+        opacity: 0;
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 40px;
+        transform: translateY(-15px);
+        animation: cascade 600ms ease-in-out forwards;
+        & h2 {
+            font-weight: 300;
+            font-size: 16px;
+            
+        }
+        & h2::after {
+            content: "";
+            display: flex;
+            width: 40px;
+            height: 3px;
+            background-color : $third-color;
+            margin-top: 8px;
+        }
+        &-items {
+            position: relative;
+            display: flex;
+            min-width: 0;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 15px;
+            border: none;
+            height: 100%;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            padding: 12px 14px;
+            overflow: hidden;
+            
+            &:hover .courses-items-price, &:hover .check-button {
+                transform: translateX(-60px);
+            }
+            @include breakpoint (mobile) {
+
+                &:hover .courses-items-name p {
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    width:210px;
+                    text-align: start;
+                }
+                &:hover .courses-items-name h3 {
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    width:210px;
+                    text-align: start;
+                }
+            }
+
+            &-name {
+                width: 210px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 5px;
+                white-space: nowrap;
+                
+            
+                & h3 {
+                    
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                & p {
+                    
+                    font-weight: 300;
+                    font-size: 15px;
+            
+                }
+            }
+            &-price {
+                height: 100%;
+                min-width: 0;
+                display: flex;
+                align-items: flex-end;
+                transition: all 400ms linear;
+                
+            }
+        }
+    }
+    .button-center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & a {
+            width: 170px;
+            font-weight: 500;
+            font-size: 16px;    
+        }
+    }
+
+    .check-button {
+    position: absolute;
+    right: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: 69px;
+    width: 59px;
+    background-color: $third-color;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 400ms linear;
+   
+    
+    
+}
+
+
+@for $i from 1 through 3 {
+
+    .courses:nth-child(#{$i}){
+        animation-delay: $i*300ms;
+    }
+  }
+
+
+
+
+@keyframes cascade {
+
+    from { transform: translateY(-15px);
+        opacity: 0;
+
+    }
+    to { transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+
+  
+    
+

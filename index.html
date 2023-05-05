@@ -4,8 +4,10 @@
     <title>Ohmyfood</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,7 +21,7 @@
   <body>
     <div class="loader">
       <div class="loader-elements">
-        <p class="font__title">Loading ohmyfood ...</p>
+        <p class="font__title font__title--large">Loading ohmyfood ...</p>
         <div class="bouncy-circles">
           <div class="circle circle--teal"></div>
           <div class="circle circle--pink"></div>
@@ -30,7 +32,9 @@
       </div>
     </div>
     <header>
-      <h1 class="font__title center--x padding__logo">Ohmyfood</h1>
+      <h1 class="font__title font__title--large center--x padding__logo">
+        Ohmyfood
+      </h1>
     </header>
     <section class="navigation">
       <div class="navigation__location navigation__location--padding">
@@ -63,13 +67,17 @@
     </section>
     <section class="restaurants">
       <h1 class="restaurants__title">Restaurants</h1>
-      <ul>
-        <li>
-          <a href="#" class="cards">
+      <ul class="restaurants__list">
+        <li class="restaurants__list__items">
+          <a
+            href="/Restaurants/La_palette_du_goût.html"
+            class="cards cards--new"
+          >
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Jay1.jpg"
-              alt=""
+              alt="Photographie d'un plat du restaurant La Palette du goût"
             />
+
             <div class="cards__body">
               <div>
                 <h3 class="cards__body__title">La palette du goût</h3>
@@ -82,11 +90,14 @@
             </div>
           </a>
         </li>
-        <li>
-          <a href="#" class="cards">
+        <li class="restaurants__list__items">
+          <a
+            href="/Restaurants/La_note_enchantée.html"
+            class="cards cards--new"
+          >
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Stil2.jpg"
-              alt=""
+              alt="Photographie d'un plat du restaurant La note enchantée"
             />
             <div class="cards__body">
               <div>
@@ -99,11 +110,11 @@
             </div>
           </a>
         </li>
-        <li>
-          <a href="#" class="cards">
+        <li class="restaurants__list__items">
+          <a href="/Restaurants/À_la_française.html" class="cards">
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Toa3.jpg"
-              alt=""
+              alt="Photographie d'un plat du restaurant À la française"
             />
             <div class="cards__body">
               <div>
@@ -116,11 +127,11 @@
             </div>
           </a>
         </li>
-        <li>
-          <a href="#" class="cards">
+        <li class="restaurants__list__items">
+          <a href="/Restaurants/Le_délice_des_sens.html" class="cards">
             <img
               src="Images_textes_Ohmyfood/images/restaurants/Louis4.jpg"
-              alt=""
+              alt="Photographie d'un plat du restaurant Le délice des sens"
             />
             <div class="cards__body">
               <div>
@@ -135,18 +146,17 @@
         </li>
       </ul>
     </section>
-
     <footer class="footer">
       <h3 class="font__title font__title--small footer__title">Ohmyfood</h3>
-      <ul>
-        <li class="footer__list">
+      <ul class="footer__list">
+        <li class="footer__list__items">
           <i class="fa-solid fa-utensils"></i>Proposer un restaurant
         </li>
-        <li class="footer__list">
+        <li class="footer__list__items">
           <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
         </li>
-        <li class="footer__list">Mentions légales</li>
-        <li class="footer__list">Contact</li>
+        <li class="footer__list__items">Mentions légales</li>
+        <li class="footer__list__items">Contact</li>
       </ul>
     </footer>
   </body>
