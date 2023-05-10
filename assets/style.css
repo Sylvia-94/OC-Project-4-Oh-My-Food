@@ -522,7 +522,7 @@ body {
 }
 
 .like-button:hover {
-  transition: color 0.5s linear;
+  transition: color 0.5s ease-in-out;
   color: transparent;
 }
 
@@ -657,20 +657,25 @@ body {
   padding: 12px 14px;
   overflow: hidden;
 }
+@media only screen and (min-width: 1042px) {
+  .courses-items {
+    min-width: 400px;
+  }
+}
 .courses-items:hover .courses-items-price, .courses-items:hover .check-button {
   transform: translateX(-60px);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 430px) {
   .courses-items:hover .courses-items-name p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 210px;
+    animation: ellipsis 400ms forwards linear;
     text-align: start;
   }
   .courses-items:hover .courses-items-name h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 210px;
+    animation: ellipsis 400ms forwards linear;
     text-align: start;
   }
 }
@@ -684,10 +689,12 @@ body {
   white-space: nowrap;
 }
 .courses-items-name h3 {
+  transition: width 400ms;
   font-weight: 500;
   font-size: 18px;
 }
 .courses-items-name p {
+  transition: width 400ms;
   font-weight: 300;
   font-size: 15px;
 }
@@ -748,5 +755,13 @@ body {
   to {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes ellipsis {
+  0% {
+    width: 280px;
+  }
+  100% {
+    width: 210px;
   }
 }/*# sourceMappingURL=style.css.map */

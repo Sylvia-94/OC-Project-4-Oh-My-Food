@@ -10,7 +10,7 @@ opacity: 1;
 
 }
 .like-button:hover {
-    transition: color 0.5s linear;
+    transition: color 0.5s ease-in-out;
     color: transparent;
     
 }

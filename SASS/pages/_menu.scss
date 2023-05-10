@@ -101,24 +101,30 @@
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             padding: 12px 14px;
             overflow: hidden;
+
+            @include breakpoint (desktop){
+
+                min-width: 400px;
+            }
             
             &:hover .courses-items-price, &:hover .check-button {
                 transform: translateX(-60px);
             }
-            @include breakpoint (mobile) {
+            @media only screen and (max-width: 430px) {
 
                 &:hover .courses-items-name p {
                     overflow:hidden;
                     text-overflow:ellipsis;
-                    width:210px;
+                    animation: ellipsis 400ms forwards linear;
                     text-align: start;
                 }
                 &:hover .courses-items-name h3 {
                     overflow:hidden;
                     text-overflow:ellipsis;
-                    width:210px;
+                    animation: ellipsis 400ms forwards linear;
                     text-align: start;
                 }
+                
             }
 
             &-name {
@@ -129,15 +135,14 @@
                 align-items: flex-start;
                 gap: 5px;
                 white-space: nowrap;
-                
-            
+
                 & h3 {
-                    
+                    transition: width 400ms;
                     font-weight: 500;
                     font-size: 18px;
                 }
                 & p {
-                    
+                    transition: width 400ms;
                     font-weight: 300;
                     font-size: 15px;
             
@@ -204,6 +209,18 @@
     }
     to { transform: translateY(0px);
         opacity: 1;
+
+    }
+}
+
+@keyframes ellipsis {
+    0% {
+        width: 280px;
+        
+
+    }
+    100% {
+        width: 210px;
 
     }
 }
